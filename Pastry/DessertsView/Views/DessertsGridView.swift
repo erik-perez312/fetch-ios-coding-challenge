@@ -29,8 +29,8 @@ struct DessertsGridView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Desserts")
             .navigationDestination(for: Dessert.self) { dessert in
-                // TODO: Implement
-                EmptyView()
+                let viewModel = DessertDetailsViewModel(dessertID: dessert.id)
+                DessertDetailsView(viewModel: viewModel)
             }
         }
     }

@@ -12,23 +12,7 @@ struct DessertImageTitleView: View {
     
     var body: some View {
         ZStack {
-            AsyncImage(url: URL(string: dessert.thumbnail)) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                case .failure:
-                    Image(systemName: "photo")
-                        .resizable()
-                        .foregroundStyle(Color.gray)
-                case .success(let image):
-                    image
-                        .resizable()
-                @unknown default:
-                    Image(systemName: "photo")
-                        .resizable()
-                        .foregroundStyle(Color.gray)
-                }
-            }
+            DessertAsyncImageView(url: URL(string: dessert.thumbnail))
                 
             VStack {
                 Spacer()
@@ -45,9 +29,9 @@ struct DessertImageTitleView: View {
     }
 }
 
-private let dessert = Dessert(id: "1", name: "Chocolate", thumbnail: ".")
-
 #Preview("Dessert Cell", traits: .fixedLayout(width: 200, height: 200)) {
-    DessertImageTitleView(dessert: DessertPreviewData.desserts.first ?? dessert)
+    let dessert = Dessert(id: "1", name: "Chocolate", thumbnail: ".")
+    
+    return DessertImageTitleView(dessert: DessertPreviewData.desserts.first ?? dessert)
         .frame(width: 200, height: 200)
 }
