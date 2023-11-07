@@ -11,6 +11,13 @@
 		8680EF5D2AF9BB1500173531 /* DessertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF5C2AF9BB1500173531 /* DessertsView.swift */; };
 		8680EF5F2AF9BB1600173531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680EF5E2AF9BB1600173531 /* Assets.xcassets */; };
 		8680EF622AF9BB1600173531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8680EF612AF9BB1600173531 /* Preview Assets.xcassets */; };
+		8680EF6A2AF9BBDF00173531 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF692AF9BBDF00173531 /* Dessert.swift */; };
+		8680EF6D2AF9BCEF00173531 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF6C2AF9BCEF00173531 /* NetworkClient.swift */; };
+		8680EF6F2AF9BD9100173531 /* DessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF6E2AF9BD9100173531 /* DessertDetails.swift */; };
+		8680EF722AF9BDCD00173531 /* DessertListResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8680EF712AF9BDCD00173531 /* DessertListResponse.json */; };
+		8680EF742AF9BDE900173531 /* DessertDetailsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8680EF732AF9BDE900173531 /* DessertDetailsResponse.json */; };
+		8680EF772AF9BE4300173531 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF762AF9BE4300173531 /* JSONLoader.swift */; };
+		8680EF792AF9BE6800173531 /* JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF782AF9BE6800173531 /* JSONFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		8680EF5C2AF9BB1500173531 /* DessertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertsView.swift; sourceTree = "<group>"; };
 		8680EF5E2AF9BB1600173531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8680EF612AF9BB1600173531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8680EF692AF9BBDF00173531 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		8680EF6C2AF9BCEF00173531 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		8680EF6E2AF9BD9100173531 /* DessertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetails.swift; sourceTree = "<group>"; };
+		8680EF712AF9BDCD00173531 /* DessertListResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DessertListResponse.json; sourceTree = "<group>"; };
+		8680EF732AF9BDE900173531 /* DessertDetailsResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DessertDetailsResponse.json; sourceTree = "<group>"; };
+		8680EF762AF9BE4300173531 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		8680EF782AF9BE6800173531 /* JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,10 @@
 		8680EF592AF9BB1500173531 /* Pastry */ = {
 			isa = PBXGroup;
 			children = (
+				8680EF752AF9BE3100173531 /* Helpers */,
+				8680EF702AF9BDB600173531 /* Resources */,
+				8680EF6B2AF9BCDD00173531 /* NetworkClient */,
+				8680EF682AF9BBB800173531 /* Models */,
 				8680EF5A2AF9BB1500173531 /* PastryApp.swift */,
 				8680EF5C2AF9BB1500173531 /* DessertsView.swift */,
 				8680EF5E2AF9BB1600173531 /* Assets.xcassets */,
@@ -65,6 +83,41 @@
 				8680EF612AF9BB1600173531 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8680EF682AF9BBB800173531 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF692AF9BBDF00173531 /* Dessert.swift */,
+				8680EF6E2AF9BD9100173531 /* DessertDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8680EF6B2AF9BCDD00173531 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF6C2AF9BCEF00173531 /* NetworkClient.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		8680EF702AF9BDB600173531 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF712AF9BDCD00173531 /* DessertListResponse.json */,
+				8680EF732AF9BDE900173531 /* DessertDetailsResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8680EF752AF9BE3100173531 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF762AF9BE4300173531 /* JSONLoader.swift */,
+				8680EF782AF9BE6800173531 /* JSONFile.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8680EF622AF9BB1600173531 /* Preview Assets.xcassets in Resources */,
+				8680EF722AF9BDCD00173531 /* DessertListResponse.json in Resources */,
+				8680EF742AF9BDE900173531 /* DessertDetailsResponse.json in Resources */,
 				8680EF5F2AF9BB1600173531 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8680EF5D2AF9BB1500173531 /* DessertsView.swift in Sources */,
+				8680EF6F2AF9BD9100173531 /* DessertDetails.swift in Sources */,
+				8680EF772AF9BE4300173531 /* JSONLoader.swift in Sources */,
+				8680EF792AF9BE6800173531 /* JSONFile.swift in Sources */,
+				8680EF6A2AF9BBDF00173531 /* Dessert.swift in Sources */,
 				8680EF5B2AF9BB1500173531 /* PastryApp.swift in Sources */,
+				8680EF6D2AF9BCEF00173531 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
