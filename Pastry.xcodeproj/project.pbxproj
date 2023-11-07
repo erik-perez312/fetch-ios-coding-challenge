@@ -127,8 +127,8 @@
 				8680EF702AF9BDB600173531 /* Resources */,
 				8680EF6B2AF9BCDD00173531 /* NetworkClient */,
 				8680EF682AF9BBB800173531 /* Models */,
-				8680EF5A2AF9BB1500173531 /* PastryApp.swift */,
 				8680EF992AF9D0C500173531 /* DessertsView */,
+				8680EF5A2AF9BB1500173531 /* PastryApp.swift */,
 				8680EF5E2AF9BB1600173531 /* Assets.xcassets */,
 				8680EF602AF9BB1600173531 /* Preview Content */,
 			);
