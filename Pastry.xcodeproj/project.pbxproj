@@ -18,7 +18,25 @@
 		8680EF742AF9BDE900173531 /* DessertDetailsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8680EF732AF9BDE900173531 /* DessertDetailsResponse.json */; };
 		8680EF772AF9BE4300173531 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF762AF9BE4300173531 /* JSONLoader.swift */; };
 		8680EF792AF9BE6800173531 /* JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF782AF9BE6800173531 /* JSONFile.swift */; };
+		8680EF7B2AF9BF9000173531 /* NetworkRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF7A2AF9BF9000173531 /* NetworkRequestable.swift */; };
+		8680EF7E2AF9C80400173531 /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF7D2AF9C80400173531 /* NetworkClientMock.swift */; };
+		8680EF812AF9C84F00173531 /* GetDessertListNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF802AF9C84F00173531 /* GetDessertListNetworkRequest.swift */; };
+		8680EF832AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF822AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift */; };
+		8680EF852AF9C8CC00173531 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF842AF9C8CC00173531 /* Ingredient.swift */; };
+		8680EF942AF9CAC900173531 /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF932AF9CAC900173531 /* JSONLoaderTests.swift */; };
+		8680EF962AF9CB0500173531 /* GetDessertListRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF952AF9CB0500173531 /* GetDessertListRequestTests.swift */; };
+		8680EF982AF9CB2400173531 /* GetDessertDetailsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EF972AF9CB2400173531 /* GetDessertDetailsRequestTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8680EF8E2AF9CAAF00173531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8680EF4F2AF9BB1500173531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8680EF562AF9BB1500173531;
+			remoteInfo = Pastry;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8680EF572AF9BB1500173531 /* Pastry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,10 +51,26 @@
 		8680EF732AF9BDE900173531 /* DessertDetailsResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DessertDetailsResponse.json; sourceTree = "<group>"; };
 		8680EF762AF9BE4300173531 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		8680EF782AF9BE6800173531 /* JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFile.swift; sourceTree = "<group>"; };
+		8680EF7A2AF9BF9000173531 /* NetworkRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestable.swift; sourceTree = "<group>"; };
+		8680EF7D2AF9C80400173531 /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
+		8680EF802AF9C84F00173531 /* GetDessertListNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDessertListNetworkRequest.swift; sourceTree = "<group>"; };
+		8680EF822AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDessertDetailsNetworkRequest.swift; sourceTree = "<group>"; };
+		8680EF842AF9C8CC00173531 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		8680EF8A2AF9CAAF00173531 /* PastryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8680EF932AF9CAC900173531 /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
+		8680EF952AF9CB0500173531 /* GetDessertListRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDessertListRequestTests.swift; sourceTree = "<group>"; };
+		8680EF972AF9CB2400173531 /* GetDessertDetailsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDessertDetailsRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8680EF542AF9BB1500173531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8680EF872AF9CAAF00173531 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				8680EF592AF9BB1500173531 /* Pastry */,
+				8680EF8B2AF9CAAF00173531 /* PastryTests */,
 				8680EF582AF9BB1500173531 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8680EF572AF9BB1500173531 /* Pastry.app */,
+				8680EF8A2AF9CAAF00173531 /* PastryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +126,7 @@
 			children = (
 				8680EF692AF9BBDF00173531 /* Dessert.swift */,
 				8680EF6E2AF9BD9100173531 /* DessertDetails.swift */,
+				8680EF842AF9C8CC00173531 /* Ingredient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,7 +134,9 @@
 		8680EF6B2AF9BCDD00173531 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
+				8680EF7F2AF9C82600173531 /* Requests */,
 				8680EF6C2AF9BCEF00173531 /* NetworkClient.swift */,
+				8680EF7A2AF9BF9000173531 /* NetworkRequestable.swift */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -114,10 +153,38 @@
 		8680EF752AF9BE3100173531 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8680EF7C2AF9C7E100173531 /* Mocks */,
 				8680EF762AF9BE4300173531 /* JSONLoader.swift */,
 				8680EF782AF9BE6800173531 /* JSONFile.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8680EF7C2AF9C7E100173531 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF7D2AF9C80400173531 /* NetworkClientMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8680EF7F2AF9C82600173531 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF802AF9C84F00173531 /* GetDessertListNetworkRequest.swift */,
+				8680EF822AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		8680EF8B2AF9CAAF00173531 /* PastryTests */ = {
+			isa = PBXGroup;
+			children = (
+				8680EF932AF9CAC900173531 /* JSONLoaderTests.swift */,
+				8680EF952AF9CB0500173531 /* GetDessertListRequestTests.swift */,
+				8680EF972AF9CB2400173531 /* GetDessertDetailsRequestTests.swift */,
+			);
+			path = PastryTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +207,24 @@
 			productReference = 8680EF572AF9BB1500173531 /* Pastry.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8680EF892AF9CAAF00173531 /* PastryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8680EF902AF9CAAF00173531 /* Build configuration list for PBXNativeTarget "PastryTests" */;
+			buildPhases = (
+				8680EF862AF9CAAF00173531 /* Sources */,
+				8680EF872AF9CAAF00173531 /* Frameworks */,
+				8680EF882AF9CAAF00173531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8680EF8F2AF9CAAF00173531 /* PBXTargetDependency */,
+			);
+			name = PastryTests;
+			productName = PastryTests;
+			productReference = 8680EF8A2AF9CAAF00173531 /* PastryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +237,10 @@
 				TargetAttributes = {
 					8680EF562AF9BB1500173531 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					8680EF892AF9CAAF00173531 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8680EF562AF9BB1500173531;
 					};
 				};
 			};
@@ -169,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				8680EF562AF9BB1500173531 /* Pastry */,
+				8680EF892AF9CAAF00173531 /* PastryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +275,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8680EF882AF9CAAF00173531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,17 +289,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8680EF7E2AF9C80400173531 /* NetworkClientMock.swift in Sources */,
 				8680EF5D2AF9BB1500173531 /* DessertsView.swift in Sources */,
+				8680EF812AF9C84F00173531 /* GetDessertListNetworkRequest.swift in Sources */,
 				8680EF6F2AF9BD9100173531 /* DessertDetails.swift in Sources */,
+				8680EF7B2AF9BF9000173531 /* NetworkRequestable.swift in Sources */,
 				8680EF772AF9BE4300173531 /* JSONLoader.swift in Sources */,
 				8680EF792AF9BE6800173531 /* JSONFile.swift in Sources */,
 				8680EF6A2AF9BBDF00173531 /* Dessert.swift in Sources */,
+				8680EF852AF9C8CC00173531 /* Ingredient.swift in Sources */,
 				8680EF5B2AF9BB1500173531 /* PastryApp.swift in Sources */,
+				8680EF832AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift in Sources */,
 				8680EF6D2AF9BCEF00173531 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8680EF862AF9CAAF00173531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8680EF962AF9CB0500173531 /* GetDessertListRequestTests.swift in Sources */,
+				8680EF942AF9CAC900173531 /* JSONLoaderTests.swift in Sources */,
+				8680EF982AF9CB2400173531 /* GetDessertDetailsRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8680EF8F2AF9CAAF00173531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8680EF562AF9BB1500173531 /* Pastry */;
+			targetProxy = 8680EF8E2AF9CAAF00173531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8680EF632AF9BB1600173531 /* Debug */ = {
@@ -382,6 +502,42 @@
 			};
 			name = Release;
 		};
+		8680EF912AF9CAAF00173531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BNVK6F4V3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erik.PastryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pastry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pastry";
+			};
+			name = Debug;
+		};
+		8680EF922AF9CAAF00173531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BNVK6F4V3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erik.PastryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pastry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pastry";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +555,15 @@
 			buildConfigurations = (
 				8680EF662AF9BB1600173531 /* Debug */,
 				8680EF672AF9BB1600173531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8680EF902AF9CAAF00173531 /* Build configuration list for PBXNativeTarget "PastryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8680EF912AF9CAAF00173531 /* Debug */,
+				8680EF922AF9CAAF00173531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
