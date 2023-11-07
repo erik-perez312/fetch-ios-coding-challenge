@@ -31,7 +31,7 @@ class DessertsViewModel: ObservableObject, DessertsViewModelProtocol {
         networkClient.request(GetDessertListNetworkRequest()) { [weak self] result in
             switch result {
             case .success(let listResponse):
-                self?.desserts = listResponse.meals
+                self?.desserts = listResponse.meals.sorted { $0.name < $1.name }
                 self?.state = .loaded
             case .failure:
                 self?.state = .error

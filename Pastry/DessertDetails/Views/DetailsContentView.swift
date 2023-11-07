@@ -13,7 +13,7 @@ struct DetailsContentView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                DessertAsyncImageView(url: URL(string: details.imageURL))
+                CachedAsyncImageView(url: details.imageURL)
                 
                 Section(header: SectionHeader(title: "Ingredients")) {
                     ForEach(details.ingredients, id: \.self) { ingredient in

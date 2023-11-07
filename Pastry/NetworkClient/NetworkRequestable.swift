@@ -7,6 +7,15 @@
 
 import Foundation
 
+enum HTTPMethod: String {
+    // Only using get
+    case get = "GET"
+}
+
+enum Scheme: String {
+    case https
+}
+
 protocol NetworkRequestable {
     associatedtype Response: Codable
     

@@ -12,7 +12,7 @@ struct DessertImageTitleView: View {
     
     var body: some View {
         ZStack {
-            DessertAsyncImageView(url: URL(string: dessert.thumbnail))
+            CachedAsyncImageView(url: dessert.thumbnail)
                 
             VStack {
                 Spacer()

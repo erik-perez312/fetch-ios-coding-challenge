@@ -7,15 +7,6 @@
 
 import Foundation
 
-enum HTTPMethod: String {
-    // Only using get
-    case get = "GET"
-}
-
-enum Scheme: String {
-    case https
-}
-
 enum NetworkError: Error {
     case decodingError(message: String)
     case requestFailed(message: String)
@@ -37,7 +28,7 @@ class NetworkClient: NetworkClientProtocol {
     func request<Request: NetworkRequestable>(
         _ request: Request,
         completionHandler: @escaping (Result<Request.Response, Error>) -> Void
-    ) -> URLSessionDataTask?
+        ) -> URLSessionDataTask?
     {
         var components = URLComponents()
         components.scheme = request.scheme.rawValue

@@ -42,8 +42,11 @@
 		8680EFBA2AFA745800173531 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFB92AFA745800173531 /* SectionHeader.swift */; };
 		8680EFBC2AFA748600173531 /* DetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFBB2AFA748600173531 /* DetailsContentView.swift */; };
 		8680EFBE2AFA74D600173531 /* DessertDetailsViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFBD2AFA74D600173531 /* DessertDetailsViewModelMock.swift */; };
-		8680EFC02AFA7AEA00173531 /* DessertAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFBF2AFA7AEA00173531 /* DessertAsyncImageView.swift */; };
+		8680EFC02AFA7AEA00173531 /* CachedAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFBF2AFA7AEA00173531 /* CachedAsyncImageView.swift */; };
 		8680EFC32AFA7F9300173531 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFC22AFA7F9300173531 /* PlaceholderImage.swift */; };
+		8680EFC62AFA81D400173531 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFC52AFA81D400173531 /* ImageCache.swift */; };
+		8680EFC82AFA81ED00173531 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFC72AFA81ED00173531 /* ImageManager.swift */; };
+		8680EFCA2AFA823000173531 /* GetImageDataNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680EFC92AFA823000173531 /* GetImageDataNetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +97,11 @@
 		8680EFB92AFA745800173531 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		8680EFBB2AFA748600173531 /* DetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContentView.swift; sourceTree = "<group>"; };
 		8680EFBD2AFA74D600173531 /* DessertDetailsViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailsViewModelMock.swift; sourceTree = "<group>"; };
-		8680EFBF2AFA7AEA00173531 /* DessertAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertAsyncImageView.swift; sourceTree = "<group>"; };
+		8680EFBF2AFA7AEA00173531 /* CachedAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImageView.swift; sourceTree = "<group>"; };
 		8680EFC22AFA7F9300173531 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
+		8680EFC52AFA81D400173531 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8680EFC72AFA81ED00173531 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		8680EFC92AFA823000173531 /* GetImageDataNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageDataNetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		8680EF592AF9BB1500173531 /* Pastry */ = {
 			isa = PBXGroup;
 			children = (
+				8680EFC42AFA81C600173531 /* BusinessLogic */,
 				8680EFB32AFA739B00173531 /* DessertDetails */,
 				8680EF992AF9D0C500173531 /* DessertsView */,
 				8680EF752AF9BE3100173531 /* Helpers */,
@@ -174,9 +181,9 @@
 		8680EF6B2AF9BCDD00173531 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
-				8680EF7F2AF9C82600173531 /* Requests */,
 				8680EF6C2AF9BCEF00173531 /* NetworkClient.swift */,
 				8680EF7A2AF9BF9000173531 /* NetworkRequestable.swift */,
+				8680EF7F2AF9C82600173531 /* Requests */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -219,6 +226,7 @@
 			children = (
 				8680EF802AF9C84F00173531 /* GetDessertListNetworkRequest.swift */,
 				8680EF822AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift */,
+				8680EFC92AFA823000173531 /* GetImageDataNetworkRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -275,10 +283,19 @@
 			isa = PBXGroup;
 			children = (
 				8680EFAD2AF9D71000173531 /* ErrorRetryView.swift */,
-				8680EFBF2AFA7AEA00173531 /* DessertAsyncImageView.swift */,
+				8680EFBF2AFA7AEA00173531 /* CachedAsyncImageView.swift */,
 				8680EFC22AFA7F9300173531 /* PlaceholderImage.swift */,
 			);
 			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		8680EFC42AFA81C600173531 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				8680EFC52AFA81D400173531 /* ImageCache.swift */,
+				8680EFC72AFA81ED00173531 /* ImageManager.swift */,
+			);
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,13 +409,15 @@
 				8680EFB52AFA73B900173531 /* DessertDetailsView.swift in Sources */,
 				8680EF5D2AF9BB1500173531 /* DessertsView.swift in Sources */,
 				8680EF812AF9C84F00173531 /* GetDessertListNetworkRequest.swift in Sources */,
-				8680EFC02AFA7AEA00173531 /* DessertAsyncImageView.swift in Sources */,
+				8680EFC02AFA7AEA00173531 /* CachedAsyncImageView.swift in Sources */,
+				8680EFCA2AFA823000173531 /* GetImageDataNetworkRequest.swift in Sources */,
 				8680EF9B2AF9D0E500173531 /* DessertImageTitleView.swift in Sources */,
 				8680EF6F2AF9BD9100173531 /* DessertDetails.swift in Sources */,
 				8680EF7B2AF9BF9000173531 /* NetworkRequestable.swift in Sources */,
 				8680EFBA2AFA745800173531 /* SectionHeader.swift in Sources */,
 				8680EF772AF9BE4300173531 /* JSONLoader.swift in Sources */,
 				8680EFC32AFA7F9300173531 /* PlaceholderImage.swift in Sources */,
+				8680EFC62AFA81D400173531 /* ImageCache.swift in Sources */,
 				8680EFB02AF9D74200173531 /* ViewModelState.swift in Sources */,
 				8680EF792AF9BE6800173531 /* JSONFile.swift in Sources */,
 				8680EFB72AFA740200173531 /* DessertDetailsViewModel.swift in Sources */,
@@ -409,6 +428,7 @@
 				8680EF9D2AF9D1A700173531 /* DessertPreviewData.swift in Sources */,
 				8680EFAA2AF9D59400173531 /* DessertsViewModel.swift in Sources */,
 				8680EF852AF9C8CC00173531 /* Ingredient.swift in Sources */,
+				8680EFC82AFA81ED00173531 /* ImageManager.swift in Sources */,
 				8680EF5B2AF9BB1500173531 /* PastryApp.swift in Sources */,
 				8680EF832AF9C87400173531 /* GetDessertDetailsNetworkRequest.swift in Sources */,
 				8680EFBE2AFA74D600173531 /* DessertDetailsViewModelMock.swift in Sources */,
